@@ -1,0 +1,9 @@
+{
+  "name": "app-compiler-frontend",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npx serve . -p 3000",
+    "start": "npx serve . -p 3000"
+  },
+  "dependencies": {}
+}

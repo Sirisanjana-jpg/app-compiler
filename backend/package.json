@@ -1,0 +1,28 @@
+{
+  "name": "app-compiler-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --exec \"node --loader ts-node/esm\" src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "eval": "node --loader ts-node/esm src/evaluation/runner.ts"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "groq-sdk": "^1.2.1",
+    "openai": "^4.52.7",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.0",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
